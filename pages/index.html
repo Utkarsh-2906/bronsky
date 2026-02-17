@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bronsky Ortho</title>
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" />
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/style.css">
+
+
+</head>
+
+<body class="w-screen overflow-x-hidden">
+    <!-- header section start -->
+    <header id="header" class="bg-white transition-all duration-300 z-50">
+        <div class="top text-white bg-blue-4 py-4">
+            <div class="container-fluid">
+                <div class="content flex lg:justify-between items-center">
+                    <span class="sm:text-7 md:text-6 text-5 font-bold">Breaking the Mold of Orthodontics™</span>
+
+                    <div class="max-lg:hidden flex items-center gap-4">
+                        <div class="flex items-center gap-2">
+                            <img src="../assets/images/icons/phone.svg" class="w-5 h-5 object-contain" alt="phone">
+                            <span class="sm:text-7 md:text-6 text-5 font-bold">212.758.0040</span>
+                        </div>
+
+                        <a href="#"
+                            class="bg-blue-2 text-white py-2 px-4 rounded-full hover:bg-blue-2/80 transition duration-300">
+                            <span class="sm:text-7 md:text-6 text-5 font-bold">Book an Appointment</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- bottom -->
+        <div class="bottom relative py-3 lg:py-6">
+            <div class="container-fluid">
+                <div class="flex justify-between items-center">
+                    <!-- Mobile Hamburger -->
+                    <button id="menuBtn" class="lg:hidden text-gray-700 focus:outline-none">
+                        <img id="hamburgerIcon" src="../assets/images/icons/hamburger.svg"
+                            class="w-5 h-5 object-contain cursor-pointer" alt="hamburgerIcon">
+                        <img id="hamburgerIcon2" src="../assets/images/icons/hamburger2.svg"
+                            class="w-5 h-5 object-contain cursor-pointer hidden" alt="hamburgerIcon">
+                    </button>
+
+                    <!-- Logo -->
+                    <div class="img text-2xl font-bold text-indigo-600">
+                        <img src="../assets/images/logo.png" alt="Logo"
+                            class="w-auto h-10 md:h-13 lg:h-19 object-contain">
+                    </div>
+
+                    <!-- Desktop Menu -->
+                    <nav class="hidden lg:flex space-x-8 items-center">
+                        <ul class="hidden lg:flex space-x-8 items-center">
+                            <li class="main-menu group">
+                                <span>About</span>
+                                <!-- Dropdown -->
+                                <div class="sub-menu absolute left-0 top-full w-full mt-0 bg-blue-2 shadow-lg opacity-0 invisible group-hover:opacity-100 
+                                            group-hover:visible transition-all duration-200 py-10">
+                                    <div class="container-fluid">
+                                        <ul class="grid grid-cols-4 gap-4 px-5">
+                                            <li>
+                                                <a href="#">About Us</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">What Sets Us Apart</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Why An Orthodontist?</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">In The Community</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Team -->
+                            <li class="main-menu group">
+                                <span>Meet the Team</span>
+                                <div class="sub-menu absolute left-0 top-full w-full mt-0 bg-blue-2 shadow-lg opacity-0 invisible group-hover:opacity-100 
+                                            group-hover:visible transition-all duration-200 py-10">
+                                    <div class="container-fluid">
+                                        <ul class="grid grid-cols-4 gap-4 px-5">
+                                            <li>
+                                                <a href="#">Team1</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Team2</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Team3</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Team4</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Patient -->
+                            <li class="main-menu group">
+                                <span>Patient Information</span>
+                                <div class="sub-menu absolute left-0 top-full w-full mt-0 bg-blue-2 shadow-lg opacity-0 invisible group-hover:opacity-100 
+                                            group-hover:visible transition-all duration-200 py-10">
+                                    <div class="container-fluid">
+                                        <ul class="grid grid-cols-4 gap-4 px-5">
+                                            <li>
+                                                <a href="#">Patient1</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Patient2</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Patient3</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Patient4</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- Treatments -->
+                            <li class="main-menu group">
+                                <span>Treatments</span>
+                                <div class="sub-menu absolute left-0 top-full w-full mt-0 bg-blue-2 shadow-lg opacity-0 invisible group-hover:opacity-100 
+                                            group-hover:visible transition-all duration-200 py-10">
+                                    <div class="container-fluid">
+                                        <ul class="grid grid-cols-4 gap-4 px-5">
+                                            <li>
+                                                <a href="#">Treatment1</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Treatment2</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Treatment3</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Treatment4</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- Invisalign -->
+                            <li class="main-menu group">
+                                <span>Invisalign</span>
+                                <div class="sub-menu absolute left-0 top-full w-full mt-0 bg-blue-2 shadow-lg opacity-0 invisible 
+                                        group-hover:opacity-100 group-hover:visible transition-all duration-200 py-10">
+                                    <div class="container-fluid">
+                                        <ul class="grid grid-cols-4 gap-4 px-5">
+                                            <li><a href="#">What Is Invisalign</a></li>
+                                            <li><a href="#">Invisalign Teen</a></li>
+                                            <li><a href="#">Treatment Process</a></li>
+                                            <li><a href="#">Before & After</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- Results -->
+                            <li class="main-menu group">
+                                <span>Results</span>
+                                <div class="sub-menu absolute left-0 top-full w-full mt-0 bg-blue-2 shadow-lg opacity-0 invisible 
+                                    group-hover:opacity-100 group-hover:visible transition-all duration-200 py-10">
+                                    <div class="container-fluid">
+                                        <ul class="grid grid-cols-4 gap-4 px-5">
+                                            <li><a href="#">Smile Gallery</a></li>
+                                            <li><a href="#">Before & After</a></li>
+                                            <li><a href="#">Patient Testimonials</a></li>
+                                            <li><a href="#">Case Studies</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- Contact -->
+                            <li class="main-menu group">
+                                <span>Contact</span>
+                                <div class="sub-menu absolute left-0 top-full w-full mt-0 bg-blue-2 shadow-lg opacity-0 invisible 
+                group-hover:opacity-100 group-hover:visible transition-all duration-200 py-10">
+                                    <div class="container-fluid">
+                                        <ul class="grid grid-cols-4 gap-4 px-5">
+                                            <li><a href="#">Request Appointment</a></li>
+                                            <li><a href="#">Locations</a></li>
+                                            <li><a href="#">Call Us</a></li>
+                                            <li><a href="#">Directions</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- Search Wrapper -->
+                    <div class="group">
+                        <button id="mobileSearchBtn">
+                            <img id="searchIcon" src="../assets/images/icons/search.svg"
+                                class="w-5 h-5 object-contain cursor-pointer block" alt="search">
+                            <img id="closeIcon" src="../assets/images/icons/close.svg"
+                                class="w-5 h-5 object-contain cursor-pointer hidden lg:!hidden" alt="close">
+                        </button>
+
+                        <div id="mobileSearch"
+                            class="absolute left-0 top-full w-screen bg-blue-2 lg:opacity-0 lg:invisible lg:group-hover:opacity-100 lg:group-hover:visible transition-all duration-300 z-2">
+
+                            <div class="container-fluid py-6">
+                                <div class="relative">
+                                    <input type="text" placeholder="Search..." class="w-full rounded-full py-2 font-bold text-5 text-gray-1 lg:py-4 pl-12 pr-6 bg-white border border-blue-1 focus:outline-none 
+                            focus:ring-0 focus:ring-blue-900 placeholder-gray-1/80" />
+                                    <img src="../assets/images/icons/search.svg"
+                                        class="w-4 h-4 lg:w-5 lg:h-5 object-contain absolute left-5 top-1/2 -translate-y-1/2"
+                                        alt="search">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden lg:hidden bg-blue-2 relative mt-2">
+                <ul class="overflow-y-scroll">
+                    <!-- mobile about -->
+                    <li class="main-menu group">
+                        <button onclick="toggleSubMenu('about', this)" class="w-full flex justify-between items-center">
+                            About
+                            <svg width="20" height="12" viewBox="0 0 20 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.9901 0.410169L19.5895 9.00985C20.1368 9.55689 20.1368 10.4438 19.5895 10.9906C19.0427 11.5374 18.1558 11.5374 17.609 10.9906L9.99986 3.38122L2.39095 10.9904C1.84391 11.5372 0.957105 11.5372 0.410283 10.9904C-0.136761 10.4436 -0.136761 9.55667 0.410283 9.00963L9.00983 0.409948C9.28337 0.136536 9.64151 -1.51438e-05 9.99981 -1.51395e-05C10.3583 -1.51353e-05 10.7167 0.136802 10.9901 0.410169Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                        <!-- Dropdown -->
+                        <div id="about" class="hidden space-y-2">
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">What Sets Us Apart</a>
+                                </li>
+                                <li>
+                                    <a href="#">Why An Orthodontist?</a>
+                                </li>
+                                <li>
+                                    <a href="#">In The Community</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- mobile team -->
+                    <li class="main-menu group">
+                        <button onclick="toggleSubMenu('team', this)" class="w-full flex justify-between items-center">
+                            Team
+                            <svg width="20" height="12" viewBox="0 0 20 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.9901 0.410169L19.5895 9.00985C20.1368 9.55689 20.1368 10.4438 19.5895 10.9906C19.0427 11.5374 18.1558 11.5374 17.609 10.9906L9.99986 3.38122L2.39095 10.9904C1.84391 11.5372 0.957105 11.5372 0.410283 10.9904C-0.136761 10.4436 -0.136761 9.55667 0.410283 9.00963L9.00983 0.409948C9.28337 0.136536 9.64151 -1.51438e-05 9.99981 -1.51395e-05C10.3583 -1.51353e-05 10.7167 0.136802 10.9901 0.410169Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                        <!-- Dropdown -->
+                        <div id="team" class="hidden space-y-2">
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Team1</a>
+                                </li>
+                                <li>
+                                    <a href="#">Team2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Team3</a>
+                                </li>
+                                <li>
+                                    <a href="#">Team4</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- mobile patient information -->
+                    <li class="main-menu group">
+                        <button onclick="toggleSubMenu('patient-info', this)"
+                            class="w-full flex justify-between items-center">
+                            Patient Information
+                            <svg width="20" height="12" viewBox="0 0 20 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.9901 0.410169L19.5895 9.00985C20.1368 9.55689 20.1368 10.4438 19.5895 10.9906C19.0427 11.5374 18.1558 11.5374 17.609 10.9906L9.99986 3.38122L2.39095 10.9904C1.84391 11.5372 0.957105 11.5372 0.410283 10.9904C-0.136761 10.4436 -0.136761 9.55667 0.410283 9.00963L9.00983 0.409948C9.28337 0.136536 9.64151 -1.51438e-05 9.99981 -1.51395e-05C10.3583 -1.51353e-05 10.7167 0.136802 10.9901 0.410169Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+
+                        <div id="patient-info" class="hidden space-y-2">
+                            <ul class="sub-menu">
+                                <li><a href="#">First Visit</a></li>
+                                <li><a href="#">Insurance & Financing</a></li>
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="#">Patient Forms</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- mobile treatments -->
+                    <li class="main-menu group">
+                        <button onclick="toggleSubMenu('treatments', this)"
+                            class="w-full flex justify-between items-center">
+                            Treatments
+                            <svg width="20" height="12" viewBox="0 0 20 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.9901 0.410169L19.5895 9.00985C20.1368 9.55689 20.1368 10.4438 19.5895 10.9906C19.0427 11.5374 18.1558 11.5374 17.609 10.9906L9.99986 3.38122L2.39095 10.9904C1.84391 11.5372 0.957105 11.5372 0.410283 10.9904C-0.136761 10.4436 -0.136761 9.55667 0.410283 9.00963L9.00983 0.409948C9.28337 0.136536 9.64151 -1.51438e-05 9.99981 -1.51395e-05C10.3583 -1.51353e-05 10.7167 0.136802 10.9901 0.410169Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+
+                        <div id="treatments" class="hidden space-y-2">
+                            <ul class="sub-menu">
+                                <li><a href="#">Braces</a></li>
+                                <li><a href="#">Clear Braces</a></li>
+                                <li><a href="#">Early Treatment</a></li>
+                                <li><a href="#">Adult Orthodontics</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- mobile invisalign -->
+                    <li class="main-menu group">
+                        <button onclick="toggleSubMenu('invisalign', this)"
+                            class="w-full flex justify-between items-center">
+                            Invisalign®
+                            <svg width="20" height="12" viewBox="0 0 20 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.9901 0.410169L19.5895 9.00985C20.1368 9.55689 20.1368 10.4438 19.5895 10.9906C19.0427 11.5374 18.1558 11.5374 17.609 10.9906L9.99986 3.38122L2.39095 10.9904C1.84391 11.5372 0.957105 11.5372 0.410283 10.9904C-0.136761 10.4436 -0.136761 9.55667 0.410283 9.00963L9.00983 0.409948C9.28337 0.136536 9.64151 -1.51438e-05 9.99981 -1.51395e-05C10.3583 -1.51353e-05 10.7167 0.136802 10.9901 0.410169Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+
+                        <div id="invisalign" class="hidden space-y-2">
+                            <ul class="sub-menu">
+                                <li><a href="#">What Is Invisalign</a></li>
+                                <li><a href="#">Invisalign Teen</a></li>
+                                <li><a href="#">Treatment Process</a></li>
+                                <li><a href="#">Before & After</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- mobile results -->
+                    <li class="main-menu group">
+                        <button onclick="toggleSubMenu('results', this)"
+                            class="w-full flex justify-between items-center">
+                            Results
+                            <svg width="20" height="12" viewBox="0 0 20 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.9901 0.410169L19.5895 9.00985C20.1368 9.55689 20.1368 10.4438 19.5895 10.9906C19.0427 11.5374 18.1558 11.5374 17.609 10.9906L9.99986 3.38122L2.39095 10.9904C1.84391 11.5372 0.957105 11.5372 0.410283 10.9904C-0.136761 10.4436 -0.136761 9.55667 0.410283 9.00963L9.00983 0.409948C9.28337 0.136536 9.64151 -1.51438e-05 9.99981 -1.51395e-05C10.3583 -1.51353e-05 10.7167 0.136802 10.9901 0.410169Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+
+                        <div id="results" class="hidden space-y-2">
+                            <ul class="sub-menu">
+                                <li><a href="#">Smile Gallery</a></li>
+                                <li><a href="#">Before & After</a></li>
+                                <li><a href="#">Testimonials</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- mobile contact -->
+                    <li class="main-menu group">
+                        <button onclick="toggleSubMenu('contact', this)"
+                            class="w-full flex justify-between items-center">
+                            Contact
+                            <svg width="20" height="12" viewBox="0 0 20 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.9901 0.410169L19.5895 9.00985C20.1368 9.55689 20.1368 10.4438 19.5895 10.9906C19.0427 11.5374 18.1558 11.5374 17.609 10.9906L9.99986 3.38122L2.39095 10.9904C1.84391 11.5372 0.957105 11.5372 0.410283 10.9904C-0.136761 10.4436 -0.136761 9.55667 0.410283 9.00963L9.00983 0.409948C9.28337 0.136536 9.64151 -1.51438e-05 9.99981 -1.51395e-05C10.3583 -1.51353e-05 10.7167 0.136802 10.9901 0.410169Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+
+                        <div id="contact" class="hidden space-y-2">
+                            <ul class="sub-menu">
+                                <li><a href="#">Request Appointment</a></li>
+                                <li><a href="#">Locations</a></li>
+                                <li><a href="#">Call Us</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="other-menu">
+                        <a href="#"
+                            class="w-full font-bold flex justify-center items-center gap-3 text-whiterounded-lg text-center">
+                            <img src="../assets/images/icons/phone.svg" class="w-5 h-5 object-contain" alt="phone">
+                            212.758.0040
+                        </a>
+                    </li>
+                    <li class="other-menu">
+                        <a href="#"
+                            class="w-full flex justify-center bg-blue-3 text-white py-2.5 px-4 rounded-full transition duration-300">
+                            <span class="sm:text-7 md:text-6 text-5 font-bold">Book an Appointment</span>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- header section end -->
+
+    <!-- banner section start -->
+    <section class="banner">
+        <div class="swiper bannerSwiper">
+            <div class="swiper-wrapper">
+                <!-- slide -->
+                <div class="swiper-slide">
+                    <div class="item relative">
+                        <div class="bg-img">
+                            <img src="../assets/images/banner1.png" alt="Banner Image"
+                                class="w-screen h-full object-cover grayscale">
+                        </div>
+
+                        <div class="content left">
+                            <span>Breaking The World of Orthodontics</span>
+                            <h2 class="md:mb-5 mb-2.5">One Beautiful Smile at a Time</h2>
+                            <div class="divider"></div>
+                            <p class="lg:mb-7.5 mb-5">Whether you’re looking for treatment for yourself or your kids,
+                                our practice provides the most comprehensive effective and aesthetic orthodontic
+                                treatments available today. We treat patients of every age, specializing in all areas of
+                                orthodontics including braces and Invisalign®. It’s never too late to improve your
+                                smile!</p>
+                            <a href="#" class="btn btn-fill">
+                                More About Treatment Options
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- slide -->
+                <div class="swiper-slide">
+                    <div class="item relative">
+                        <div class="bg-img">
+                            <img src="../assets/images/banner2.png" alt="Banner Image"
+                                class="w-screen h-full object-cover grayscale">
+                        </div>
+
+                        <div class="content right">
+                            <span>A Progressive Center For Orthodontics</span>
+                            <h2 class="mb-5">That Delivers the Best Care Available</h2>
+                            <p class="lg:mb-7.5 mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
+                                ipsam, repudiandae sunt suscipit quia omnis, doloribus nemo laboriosam officiis mollitia
+                                reprehenderit inventore saepe at est amet quibusdam maxime, vero vel!</p>
+                            <div class="divider"></div>
+                            <a href="#" class="btn btn-fill">
+                                Our Treatments
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination bottom-7"></div>
+        </div>
+    </section>
+    <!-- banner section end -->
+
+    <!-- zigzag section start -->
+    <section class="zigzag">
+        <div class="container-fluid lg:px-0!">
+            <div class="flex flex-col lg:flex-row items-center py-24.5">
+                <div class="img w-full lg:w-[45%]">
+                    <img src="../assets/images/img1.png" alt="Zigzag Image"
+                        class="w-full h-full object-cover grayscale aspect-1/1.2">
+                </div>
+                <div class="content w-[95%] lg:w-[45%] lg:-left-[5%] lg:p-55px lg:mt-0 -mt-[15%] p-5.5 bg-blue-2 relative text-white"
+                    data-aos="fade-left" data-aos-duration="2000">
+                    <span class="lg:text-3 text-4 font-subheading font-light">Orthodontics for</span>
+                    <h3>a Lifetime of Beautiful Smiles</h3>
+                    <div class="divider w-full h-0.25 mt-2.5 mb-5 block bg-blue-1"></div>
+                    <p class="lg:mb-7.5 mb-5">Bronsky Orthodontics is a progressive leader in orthodontics that delivers
+                        the best and most advanced care for you. Building upon three generations of practice history and
+                        a sincere desire to serve his patients, New York City orthodontist Dr. Mark J. Bronsky has
+                        created an expert team of Board Certified Orthodontists who focus on individualized treatments
+                        in which quality always comes first. Without question.</p>
+
+                    <button id="ReadMoreIcon" class="text-blue-1 block mb-4 lg:hidden">Read More</button>
+                    <p id="extraContent" class="lg:mb-5 lg:mt-7 font-light mt-3 mb-4 hidden lg:block">Call us. Our
+                        offices on Park Avenue and in TriBeCa are warm and inviting. Our
+                        patient-centered approach will get you smiling now. And the results we create for you will leave
+                        you smiling for a lifetime.</p>
+                    <a href="#" class="btn btn-fill2">
+                        Learn More About Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- zigzag section end -->
+
+    <!-- doctors section start -->
+    <section class="meet-doctors text-white">
+        <div class="container-fluid">
+            <div class="title text-center mb-10" data-aos="fade-up" data-aos-duration="1000">
+                <h3 class="mb-2.5">Meet Our Doctors</h3>
+                <div class="divider w-25 h-0.25 mx-auto bg-blue-2"></div>
+            </div>
+
+            <div class="lg:grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-10 hidden">
+                <!-- card -->
+                <div class="card group" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="card-img">
+                        <img src="../assets/images/doctor1.png" alt="image">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="font-bold">Dr. Mark Bronsky</h4>
+                        <p class="my-3 lg:my-5">Founder of Bronsky Orthodontics and Board Certified Orthodontist, Mark
+                            has created the most advanced practice in NYC for his patients. He leads our team of highly
+                            accomplished doctors and expert technicians serving kids and adults of all ages. He is also
+                            a proud Dad, New York native, and a big rock & roll fan.</p>
+                        <a href="#" class="btn btn-fill3">Meet Dr. Bronsky</a>
+                    </div>
+                </div>
+
+                <!-- card -->
+                <div class="card group" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="100">
+                    <div class="card-img">
+                        <img src="../assets/images/doctor2.png" alt="image">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="font-bold">Dr. Michele Equinda</h4>
+                        <p class="my-3 lg:my-5">Born and raised on Long Island, Michele has excelled in every academic
+                            pursuit. She is committed to lifelong learning and care of her patients and is a Diplomate
+                            of the American Board of Orthodontics. She loves to watch her patient’s confidence grow as
+                            their smiles do.</p>
+                        <a href="#" class="btn btn-fill3">Meet Dr. Equinda</a>
+                    </div>
+                </div>
+
+                <!-- card -->
+                <div class="card group" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="200">
+                    <div class="card-img">
+                        <img src="../assets/images/doctor3.png" alt="image">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="font-bold">Dr. Jamie Silverberg</h4>
+                        <p class="my-3 lg:my-5">From Cherry Hill, New Jersey, Jamie is an accomplished scholar (Phi Beta
+                            Kappa), athlete (All-American in tennis!) and Board Certified Orthodontist (our newest doc).
+                            She brings a long list of honors to her profession and patients, plus a friendly and
+                            collaborative way of working with people of all ages.</p>
+                        <a href="#" class="btn btn-fill3">Meet Dr. Silverberg</a>
+                    </div>
+                </div>
+
+                <!-- card -->
+                <div class="card group" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="300">
+                    <div class="card-img">
+                        <img src="../assets/images/doctor4.png" alt="image">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="font-bold">Dr. Kellie Sanzone</h4>
+                        <p class="my-3 lg:my-5">Kellie loves working one-on-one with patients, and is proud that former
+                            patients are now bringing in their own kids to see her today. Originally from Watertown, New
+                            York, she is devoted to her family, team and practice. She loves the benefits a smile can
+                            make—especially in a child’s life.</p>
+                        <a href="#" class="btn btn-fill3">Meet Dr. Sanzone</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- desktop part -->
+            <div class="mobilePart lg:hidden">
+                <div class="swiper doctorsSwiper">
+                    <div class="swiper-wrapper pb-20">
+                        <!-- slide -->
+                        <div class="swiper-slide">
+                            <div class="card group">
+                                <div class="card-img">
+                                    <img src="../assets/images/doctor1.png" alt="image">
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="font-bold">Dr. Mark Bronsky</h4>
+                                    <p class="my-3 lg:my-5">Founder of Bronsky Orthodontics and Board Certified
+                                        Orthodontist, Mark has created the most advanced practice in NYC for his
+                                        patients.
+                                        He leads our team of highly accomplished doctors and expert technicians serving
+                                        kids
+                                        and adults of all ages. He is also a proud Dad, New York native, and a big rock
+                                        &
+                                        roll fan.</p>
+                                    <a href="#" class="btn btn-fill3">Meet Dr. Bronsky</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- slide -->
+                        <div class="swiper-slide">
+                            <div class="card group">
+                                <div class="card-img">
+                                    <img src="../assets/images/doctor2.png" alt="image">
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="font-bold">Dr. Michele Equinda</h4>
+                                    <p class="my-3 lg:my-5">Born and raised on Long Island, Michele has excelled in
+                                        every
+                                        academic
+                                        pursuit. She is committed to lifelong learning and care of her patients and is a
+                                        Diplomate
+                                        of the American Board of Orthodontics. She loves to watch her patient’s
+                                        confidence
+                                        grow as
+                                        their smiles do.</p>
+                                    <a href="#" class="btn btn-fill3">Meet Dr. Equinda</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- slide -->
+                        <div class="swiper-slide">
+                            <div class="card group">
+                                <div class="card-img">
+                                    <img src="../assets/images/doctor3.png" alt="image">
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="font-bold">Dr. Jamie Silverberg</h4>
+                                    <p class="my-3 lg:my-5">From Cherry Hill, New Jersey, Jamie is an accomplished
+                                        scholar
+                                        (Phi Beta
+                                        Kappa), athlete (All-American in tennis!) and Board Certified Orthodontist (our
+                                        newest doc).
+                                        She brings a long list of honors to her profession and patients, plus a friendly
+                                        and
+                                        collaborative way of working with people of all ages.</p>
+                                    <a href="#" class="btn btn-fill3">Meet Dr. Silverberg</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- slide -->
+                        <div class="swiper-slide">
+                            <div class="card group">
+                                <div class="card-img">
+                                    <img src="../assets/images/doctor4.png" alt="image">
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="font-bold">Dr. Kellie Sanzone</h4>
+                                    <p class="my-3 lg:my-5">Kellie loves working one-on-one with patients, and is proud
+                                        that
+                                        former
+                                        patients are now bringing in their own kids to see her today. Originally from
+                                        Watertown, New
+                                        York, she is devoted to her family, team and practice. She loves the benefits a
+                                        smile can
+                                        make—especially in a child’s life.</p>
+                                    <a href="#" class="btn btn-fill3">Meet Dr. Sanzone</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div
+                        class="swiper-button-prev w-8! h-8! bg-[url('../assets/images/icons/left-arrow.svg')] bg-no-repeat bg-center bottom-0! top-auto! left-[42%]! -translate-x-[58%]! bg-contain!">
+                    </div>
+                    <div
+                        class="swiper-button-next w-8! h-8! bg-[url('../assets/images/icons/right-arrow.svg')] bg-no-repeat bg-center bottom-0! top-auto! right-auto! left-[58%]! -translate-x-[42%]! bg-contain!">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- doctors section end -->
+
+    <!-- any age section start -->
+    <section class="any-age  audience-section py-25">
+        <div class="container-fluid">
+            <div class="heading text-center lg:mb-20 mb-10" data-aos="fade-up" data-aos-duration="1000">
+                <span>Orthodontic Treatments</span>
+                <h3 class="text-blue-1">at Any Age</h3>
+                <div class="divider mx-auto"></div>
+            </div>
+
+            <!-- desktop part -->
+            <div class="lg:grid lg:grid-cols-3 gap-10 hidden">
+                <!-- Card -->
+                <div class="audience-card group" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="audience-img relative">
+                        <img src="../assets/images/kids.png" alt="Kids">
+                        <div class="image-badge">Kids</div>
+                    </div>
+                    <div class="audience-overlay">
+                        <h3>Kids</h3>
+                        <div class="divider"></div>
+                        <p>
+                            The American Association of Orthodontists recommends that children have an initial
+                            evaluation by the age of seven. That’s the optimal age to evaluate skeletal development and
+                            to identify the position of permanent teeth in a developing child. Severe malocclusions
+                            (abnormal jaw bone development) can be treated or modified at this time–as needed. Come see
+                            us and bring your child in for an evaluation.
+                        </p>
+                        <a href="#" class="btn btn-fill3 w-fit">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div class="audience-card group" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="100">
+                    <div class="audience-img">
+                        <img src="../assets/images/teens.png" alt="Teens">
+                        <div class="image-badge">Teens</div>
+                    </div>
+
+                    <div class="audience-overlay">
+                        <h3>Teens</h3>
+                        <div class="divider"></div>
+                        <p>
+                            Orthodontic treatment during the teen years can guide healthy jaw development and
+                            create confident smiles that last a lifetime.
+                        </p>
+                        <a href="#" class="btn btn-fill3 w-fit">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div class="audience-card group" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="300">
+                    <div class="audience-img">
+                        <img src="../assets/images/adults.png" alt="Adults">
+                        <div class="image-badge">Adults</div>
+                    </div>
+
+                    <div class="audience-overlay">
+                        <h3>Adults</h3>
+                        <div class="divider"></div>
+                        <p>
+                            It’s never too late to improve your smile. Modern orthodontic options make treatment
+                            comfortable and discreet for adults.
+                        </p>
+                        <a href="#" class="btn btn-fill3 w-fit">Learn More</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- MOBILE SWIPER -->
+            <div class="lg:hidden">
+                <div class="swiper anyAgeSwiper">
+                    <div class="swiper-wrapper  pb-20 items-center">
+                        <div class="swiper-slide">
+                            <div class="audience-card group">
+                                <div class="audience-img relative">
+                                    <img src="../assets/images/kids.png" alt="Kids">
+                                    <div class="image-badge">Kids</div>
+                                </div>
+                                <div class="audience-overlay">
+                                    <h3>Kids</h3>
+                                    <div class="divider"></div>
+                                    <p>
+                                        The American Association of Orthodontists recommends that children have an
+                                        initial
+                                        evaluation by the age of seven. That’s the optimal age to evaluate skeletal
+                                        development and
+                                        to identify the position of permanent teeth in a developing child. Severe
+                                        malocclusions
+                                        (abnormal jaw bone development) can be treated or modified at this time–as
+                                        needed.
+                                        Come see
+                                        us and bring your child in for an evaluation.
+                                    </p>
+                                    <a href="#" class="btn btn-fill3 w-fit">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="audience-card group">
+                                <div class="audience-img">
+                                    <img src="../assets/images/teens.png" alt="Teens">
+                                    <div class="image-badge">Teens</div>
+                                </div>
+                                <div class="audience-overlay">
+                                    <h3>Teens</h3>
+                                    <div class="divider"></div>
+                                    <p>
+                                        The American Association of Orthodontists recommends that children have an
+                                        initial
+                                        evaluation by the age of seven. That’s the optimal age to evaluate skeletal
+                                        development and
+                                        to identify the position of permanent teeth in a developing child. Severe
+                                        malocclusions
+                                        (abnormal jaw bone development) can be treated or modified at this time–as
+                                        needed.
+                                        Come see
+                                        us and bring your child in for an evaluation.
+                                    </p>
+                                    <a href="#" class="btn btn-fill3 w-fit">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="audience-card group">
+                                <div class="audience-img">
+                                    <img src="../assets/images/adults.png" alt="Adults">
+                                    <div class="image-badge">Adults</div>
+                                </div>
+                                <div class="audience-overlay">
+                                    <h3>Adults</h3>
+                                    <div class="divider"></div>
+                                    <p>
+                                        The American Association of Orthodontists recommends that children have an
+                                        initial
+                                        evaluation by the age of seven. That’s the optimal age to evaluate skeletal
+                                        development and
+                                        to identify the position of permanent teeth in a developing child. Severe
+                                        malocclusions
+                                        (abnormal jaw bone development) can be treated or modified at this time–as
+                                        needed.
+                                        Come see
+                                        us and bring your child in for an evaluation.
+                                    </p>
+                                    <a href="#" class="btn btn-fill3 w-fit">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="swiper-button-prev w-8! h-8! bg-[url('../assets/images/icons/left-arrow2.svg')] bg-no-repeat bg-center bottom-0! top-auto! left-[42%]! -translate-x-[58%]! bg-contain!">
+                    </div>
+                    <div
+                        class="swiper-button-next w-8! h-8! bg-[url('../assets/images/icons/right-arrow2.svg')] bg-no-repeat bg-center bottom-0! top-auto! right-auto! left-[58%]! -translate-x-[42%]! bg-contain!">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- any age section end -->
+
+    <!-- testimonials section satrt -->
+    <section class="testimonials relative py-18 lg:py-25">
+        <div class="container-fluid">
+            <div class="grid lg:grid-cols-[35%_65%] gap-25 items-center relative z-2">
+                <div class="heading">
+                    <div data-aos="fade-right" data-aos-duration="2000">
+                        <span class="d-block">Kind Words From</span>
+                    </div>
+                    <h3 class="text-blue-1" data-aos="fade-right" data-aos-duration="2000" data-aos-offset="100">Happy Patients</h3>
+                    <div class="divider" data-aos="fade-right" data-aos-duration="2000" data-aos-offset="200"></div>
+                    <p class="text-gray-1" data-aos="fade-right" data-aos-duration="2000" data-aos-offset="300">Perhaps the best testaments for our team and our practice are the words of
+                        our patients. Thanks
+                        to them,
+                        we enjoy excellent word-of-mouth referrals and satisfaction with our services for them and their
+                        smiles.</p>
+                </div>
+
+                <!-- Swiper -->
+                <div class="swiper reviewSwiper">
+                    <div class="swiper-wrapper  pb-20 items-center">
+                        <div class="swiper-slide">
+                            <div class="review-box">
+                                <p>“I kid you not when I say that I’ve woken up each day for the past four and a half
+                                    months with a smile on my face. I still can’t believe what an amazing job you did.”
+                                </p>
+                                <span>Bravo</span>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="review-box">
+                                <p>“As soon as I met Dr. Bronsky, I knew that I would be getting the best possible
+                                    orthodontic treatment in New York City. My experience was a pleasure from start to
+                                    finish and I have a gorgeous smile to prove it!”</p>
+                                <span>Lissette M.</span>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="review-box">
+                                <p>“I kid you not when I say that I’ve woken up each day for the past four and a half
+                                    months with a smile on my face. I still can’t believe what an amazing job you did.”
+                                </p>
+                                <span>Bravo</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- testimonials section end -->
+
+    <!-- treatment section start -->
+    <section class="treatment audience-section py-25">
+        <div class="container-fluid">
+            <div class="heading text-center lg:mb-20 mb-10" data-aos="fade-up" data-aos-duration="1000">
+                <span class="text-white">Find the Treatment</span>
+                <h3 class="text-white">That's Right For You</h3>
+                <div class="divider mx-auto"></div>
+            </div>
+
+            <!-- desktop part -->
+            <div class="lg:grid lg:grid-cols-3 gap-10 hidden">
+                <!-- Card -->
+                <div class="audience-card group" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="audience-img relative">
+                        <img src="../assets/images/img2.png" alt="Kids">
+                        <div class="image-badge">Braces</div>
+                    </div>
+                    <div class="audience-overlay">
+                        <h3>Braces</h3>
+                        <div class="divider"></div>
+                        <p>
+                            Braces can help with several dental issues to properly align teeth, optimize your bite, help
+                            with crowding, and more. Just as a doctor uses medication to treat
+                            a patient, an orthodontist uses carefully planned, light forces. Braces are integrated
+                            systems that use gentle force to guide teeth into alignment.
+                        </p>
+                        <a href="#" class="btn btn-fill3 w-fit">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div class="audience-card group" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="100">
+                    <div class="audience-img">
+                        <img src="../assets/images/img3.png" alt="Teens">
+                        <div class="image-badge">Invisalign®</div>
+                    </div>
+
+                    <div class="audience-overlay">
+                        <h3>Invisalign®</h3>
+                        <div class="divider"></div>
+                        <p>
+                            Orthodontic treatment during the teen years can guide healthy jaw development and
+                            create confident smiles that last a lifetime.
+                        </p>
+                        <a href="#" class="btn btn-fill3 w-fit">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div class="audience-card group" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="300">
+                    <div class="audience-img">
+                        <img src="../assets/images/img4.png" alt="Adults">
+                        <div class="image-badge">Surgical Orthodontics</div>
+                    </div>
+
+                    <div class="audience-overlay">
+                        <h3>Surgical Orthodontics</h3>
+                        <div class="divider"></div>
+                        <p>
+                            It’s never too late to improve your smile. Modern orthodontic options make treatment
+                            comfortable and discreet for adults.
+                        </p>
+                        <a href="#" class="btn btn-fill3 w-fit">Learn More</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- MOBILE SWIPER -->
+            <div class="lg:hidden">
+                <div class="swiper treatmentSwiper">
+                    <div class="swiper-wrapper  pb-20 items-center">
+                        <div class="swiper-slide">
+                            <div class="audience-card group">
+                                <div class="audience-img relative">
+                                    <img src="../assets/images/img2.png" alt="Kids">
+                                    <div class="image-badge">Braces</div>
+                                </div>
+                                <div class="audience-overlay">
+                                    <h3>Braces</h3>
+                                    <div class="divider"></div>
+                                    <p>
+                                        The American Association of Orthodontists recommends that children have an
+                                        initial
+                                        evaluation by the age of seven. That’s the optimal age to evaluate skeletal
+                                        development and
+                                        to identify the position of permanent teeth in a developing child. Severe
+                                        malocclusions
+                                        (abnormal jaw bone development) can be treated or modified at this time–as
+                                        needed.
+                                        Come see
+                                        us and bring your child in for an evaluation.
+                                    </p>
+                                    <a href="#" class="btn btn-fill3 w-fit">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="audience-card group">
+                                <div class="audience-img">
+                                    <img src="../assets/images/img3.png" alt="Teens">
+                                    <div class="image-badge">Invisalign®</div>
+                                </div>
+                                <div class="audience-overlay">
+                                    <h3>Invisalign®</h3>
+                                    <div class="divider"></div>
+                                    <p>
+                                        The American Association of Orthodontists recommends that children have an
+                                        initial
+                                        evaluation by the age of seven. That’s the optimal age to evaluate skeletal
+                                        development and
+                                        to identify the position of permanent teeth in a developing child. Severe
+                                        malocclusions
+                                        (abnormal jaw bone development) can be treated or modified at this time–as
+                                        needed.
+                                        Come see
+                                        us and bring your child in for an evaluation.
+                                    </p>
+                                    <a href="#" class="btn btn-fill3 w-fit">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="audience-card group">
+                                <div class="audience-img">
+                                    <img src="../assets/images/img4.png" alt="Adults">
+                                    <div class="image-badge">Surgical Orthodontics</div>
+                                </div>
+                                <div class="audience-overlay">
+                                    <h3>Surgical Orthodontics</h3>
+                                    <div class="divider"></div>
+                                    <p>
+                                        The American Association of Orthodontists recommends that children have an
+                                        initial
+                                        evaluation by the age of seven. That’s the optimal age to evaluate skeletal
+                                        development and
+                                        to identify the position of permanent teeth in a developing child. Severe
+                                        malocclusions
+                                        (abnormal jaw bone development) can be treated or modified at this time–as
+                                        needed.
+                                        Come see
+                                        us and bring your child in for an evaluation.
+                                    </p>
+                                    <a href="#" class="btn btn-fill3 w-fit">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="swiper-button-prev w-8! h-8! bg-[url('../assets/images/icons/left-arrow.svg')] bg-no-repeat bg-center bottom-0! top-auto! left-[42%]! -translate-x-[58%]! bg-contain!">
+                    </div>
+                    <div
+                        class="swiper-button-next w-8! h-8! bg-[url('../assets/images/icons/right-arrow.svg')] bg-no-repeat bg-center bottom-0! top-auto! right-auto! left-[58%]! -translate-x-[42%]! bg-contain!">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- treatment section end -->
+
+    <!-- result section start -->
+    <section class="result py-25">
+        <div class="container-fluid">
+            <div class="heading text-center mb-8 lg:mb-14">
+                <h3 class="text-blue-1" data-aos="fade-up" data-aos-duration="1000">Before & After</h3>
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
+                    <span>Real Results from Real Patients</span>
+                </div>
+                <div class="divider mx-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100"></div>
+                <p class="text-gray-1 mx-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">Orthodontics is a science and an art. We combine both disciplines
+                    every day to create healthy smiles for our patients. Bronsky Orthodontics is all about attaining the
+                    best results possible, delivering care in an intelligent, efficient, and compassionate manner.
+                    We believe that the appliances we use are less important than the care, skill, and judgment we offer
+                    our patients. Together, they add up to an effective and efficient treatment plan that works for you.
+                </p>
+            </div>
+
+            <div id="prevnextSlider" class="mx-auto" aria-label="Before and after image slider" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="300">
+                <div class="img-wrapper before-img relative ">
+                    <img src="../assets/images/teeth-whitening-before.jpg" alt="Before">
+                </div>
+                <div class="img-wrapper z-2">
+                    <img src="../assets/images/teeth-whitening-after.jpg" alt="After">
+                </div>
+                <div id="line" class="absolute left-1/2 -translate-x-1/2 w-[0.2rem] h-full  z-3"></div>
+                <input id="slider" type="range" min="0" max="100" value="50"
+                    class="absolute -left-4.5 w-[calc(100%+2.25rem)] h-full appearance-none bg-transparent z-3">
+
+                <div class="image-badge z-9">Invisalign®</div>
+            </div>
+    </section>
+    <!-- result section end -->
+
+    <!-- location section start -->
+    <section class="location relative pt-14 md:pt-0">
+        <div
+            class="location-box p-7 md:p-14 text-white relative md:absolute md:top-1/2 md:-translate-y-1/2 bg-blue-4 right-0 z-2 mx-7.5"
+            data-aos="fade-right" data-aos-duration="2000" data-aos-offset="100">
+            <div class="flex flex-col space-y-5">
+                <div>
+                    <h3 class="font-bold">Our Locations</h3>
+                    <div class="divider"></div>
+                </div>
+
+                <div class="box">
+                    <h4 class="mb-1 font-heading">Park Avenue</h4>
+                    <div class="flex items-center gap-1">
+                        <img src="../assets/images/icons/location.svg" class="icon" alt="Location Icon">
+                        <p class="text-white!">530 Park Avenue, New York, NY 10065</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h4 class="mb-1 font-heading">Park Avenue</h4>
+                    <div class="flex items-center gap-1">
+                        <img src="../assets/images/icons/location.svg" class="icon" alt="Location Icon">
+                        <p class="text-white!">530 Park Avenue, New York, NY 10065</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h4 class="mb-1 font-heading">Our Phone Number</h4>
+                    <div class="flex items-center gap-1">
+                        <img src="../assets/images/icons/phone2.svg" class="icon" alt="Phone Icon">
+                        <p class="text-white!">212.758.0040</p>
+                    </div>
+                </div>
+
+                <a href="#" class="btn btn-fill3 w-fit">Contact Us</a>
+            </div>
+        </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2116.104182879427!2d-73.97127664094208!3d40.7640865353069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258ef95cd6e2d%3A0x636f67cf98bf5f92!2s530%20Park%20Ave%20APT%201G%2C%20New%20York%2C%20NY%2010065%2C%20USA!5e0!3m2!1sen!2sin!4v1771315527337!5m2!1sen!2sin"
+                class="w-full h-80 md:h-550px grayscale" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <!-- location section start -->
+
+    <!-- cot section start -->
+    <section class="cta text-white">
+        <div class="container-fluid">
+            <div class="heading lg:ms-12">
+                <h3 data-aos="fade-right" data-aos-duration="500" data-aos-offset="100">Request an Appointment</h3>
+                <p class="my-3 lg:my-5" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="100">The first step toward achieving a beautiful, healthy smile is to schedule an
+                    appointment.</p>
+                <a href="#" class="btn btn-fill2" data-aos="fade-right" data-aos-duration="1800" data-aos-offset="100">Request an Appointment</a>
+            </div>
+        </div>
+    </section>
+    <!-- cot section end -->
+
+    <!-- footer section start -->
+    <footer class="text-white p-6 lg:p-10 bg-blue-dark">
+        <div class="container-fluid">
+            <div class="top">
+                <div class="flex flex-wrap items-center justify-center lg:justify-between">
+                    <!-- left -->
+                    <div class="left w-[80%]">
+                        <h3 class="text-center md:text-start mb-3 lg:mb-5">Contact Us</h3>
+                        <div class="flex flex-wrap items-center justify-center md:justify-between gap-3 lg:gap-7.5">
+                            <div>
+                                <div class="flex lg:gap-3 mb-3 lg:mb-5">
+                                    <img src="../assets/images/icons/location.svg" class="icon" alt="Location Icon">
+                                    <p>530 Park Avenue, New York, NY 10065</p>
+                                </div>
+                                <div class="flex lg:gap-3">
+                                    <img src="../assets/images/icons/location.svg" class="icon" alt="Location Icon">
+                                    <p>15 Harrison Street, New York, NY 10013 (Ground Floor)</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="flex justify-center lg:justify-start gap-3 mb-3 lg:mb-5">
+                                    <img src="../assets/images/icons/phone2.svg" class="icon" alt="Phone Icon">
+                                    <p>212.758.0040</p>
+                                </div>
+                                <div class="flex gap-3">
+                                    <img src="../assets/images/icons/envelop.svg" class="icon" alt="Email Icon">
+                                    <p>info@bronskyorthodontics.com</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="flex gap-3 mb-3 lg:mb-5">
+                                    <img src="../assets/images/icons/clock.svg" class="icon" alt="Phone Icon">
+                                    <p>Monday to Friday <br>
+                                        8:00AM – 6:00PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- right -->
+                    <div class="right flex items-center gap-5">
+                        <a href="#" class="social-box">
+                            <img src="../assets/images/icons/facebook.svg" alt="image">
+                        </a>
+                        <a href="#" class="social-box">
+                            <img src="../assets/images/icons/instagram.svg" alt="image">
+                        </a>
+                        <a href="#" class="social-box">
+                            <img src="../assets/images/icons/youtube.svg" alt="image">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="bottom">
+                <ul class="nav flex flex-wrap justify-center items-center gap-y-3 gap-x-5 mb-5 lg:mb-10">
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Press Room</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms and Condition</a>
+                    </li>
+                </ul>
+                <p class="text-center">© 2023 Bronsky Orthodontics</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../assets/js/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

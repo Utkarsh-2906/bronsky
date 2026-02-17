@@ -1,0 +1,31 @@
+@layer components {
+    .btn {
+        @apply text-5 font-bold tracking-[1.04px] py-2.5 px-7 rounded-full capitalize inline-block transition-all duration-300 ease-linear; 
+    }
+
+    .btn-fill {
+        @apply bg-blue-3 text-white hover:bg-blue-2;
+    }
+    .btn-fill2 {
+        @apply bg-blue-3 border border-blue-3 text-white hover:bg-blue-3/0 ;
+    }
+     .btn-fill3 {
+        @apply bg-white text-blue-1 hover:shadow-1;
+    }
+    .large {
+        @apply text-1 text-blue-1 font-heading;
+    }
+
+    .heading span{
+        @apply lg:text-4 lg:leading-7.5 text-3 leading-9 text-blue-3 font-subheading;
+    }
+    .heading .divider {
+        @apply w-20 h-0.25 bg-blue-2 block my-2.5;
+    }
+    .heading.white span {
+        @apply text-white;
+    }
+    .heading.white .divider {
+        @apply bg-white;
+    }
+}

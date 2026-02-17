@@ -1,0 +1,31 @@
+*,
+::before,
+::after {
+  @apply box-border ;
+}
+HTML {
+  @apply scroll-smooth overflow-x-hidden;
+}
+body {
+  @apply font-body font-normal lg:text-6 text-7 leading-6 text-black;
+}
+
+.container-fluid {
+    @apply w-full mx-auto px-5 md:px-8 lg:px-55px;
+}
+
+h2 {
+    @apply font-heading lg:text-1 lg:leading-14 text-2 leading-10  text-blue-1;
+}
+h3 {
+    @apply font-heading lg:text-2 lg:leading-10 text-3 leading-9;
+}
+h4 {
+    @apply lg:text-4 lg:leading-7.5 text-5 leading-6.5;
+}
+
+p{
+    @apply lg:text-5 md:text-6 text-7 lg:leading-7 leading-5 font-light;
+}
+
+

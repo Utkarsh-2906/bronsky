@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Futura Cyrillic Book';
+    src: url('FuturaCyrillicBook.eot');
+    src: url('FuturaCyrillicBook.eot?#iefix') format('embedded-opentype'),
+        url('FuturaCyrillicBook.woff2') format('woff2'),
+        url('FuturaCyrillicBook.woff') format('woff'),
+        url('FuturaCyrillicBook.ttf') format('truetype'),
+        url('FuturaCyrillicBook.svg#FuturaCyrillicBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

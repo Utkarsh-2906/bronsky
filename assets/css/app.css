@@ -1,0 +1,56 @@
+@import "tailwindcss";
+@import "./base.css";
+@import "./components.css";
+@import "./utilities.css";
+@import "./layout.css";
+@import "./layout.css";
+@import "../fonts/open-sans-webfont/style.css";
+@import "../fonts/eb-garamond-2-webfont/style.css";
+@import "../fonts/futura-pt-webfont/style.css";
+
+@layer base, components, utilities;
+
+/* @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap'); */
+
+@theme {
+    /* color */
+    --color-blue-1: #002B54;
+    --color-blue-2: #8298B7;
+    --color-blue-3: #194E76;
+    --color-blue-4: #224B72;
+    --color-blue-5: #285681;
+    --color-gray-1: #555555;
+    --color-gray-2: #EBEBEC;
+    --color-blue-dark: #002548;
+
+    --font-body: 'Open Sans', sans-serif;
+    --font-heading: 'EB Garamond', serif;
+    --font-subheading: 'Futura PT Book', serif;
+
+    --text-1: 48px;
+    --text-2: 32px;
+    --text-3: 28px;
+    --text-4: 24px;
+    --text-5: 18px;
+    --text-6: 16px;
+    --text-7: 14px;
+    --text-8: 12px;
+
+    --spacing-90vh: 90vh;
+    --spacing-80px: 80px;
+    --spacing-55px: 55px;
+    --spacing-25: 100px;
+    --spacing-620px: 620px;
+    --spacing-550px: 550px;
+
+    --max-width-xl: 595px;
+    --h-1p: 1px;
+
+
+
+    --shadow-1: 0px 4px 20px rgba(0, 0, 0, 0.20);
+    --shadow-2: 0px 8px 20px rgba(0, 0, 0, 0.20);
+
+    
+}
+

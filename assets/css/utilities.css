@@ -1,0 +1,252 @@
+/* banner section start */
+.bannerSwiper .bg-img {
+    @apply w-screen h-52 md:h-90vh relative overflow-hidden;
+}
+
+.bannerSwiper .content {
+    @apply md:absolute md:max-w-xl md:top-1/2 md:-translate-y-1/2 md:text-start md:py-11 md:px-80px md:shadow-1 w-full text-center bg-white py-6 pb-11 px-4;
+}
+
+.bannerSwiper .content.left {
+    @apply left-0;
+}
+
+.bannerSwiper .content.right {
+    @apply right-0;
+}
+
+.bannerSwiper .content span {
+    @apply font-subheading md:text-2 text-4 text-blue-3;
+}
+
+.bannerSwiper .content .divider {
+    @apply w-full h-0.25 bg-blue-1 md:my-5 my-2.5 block;
+}
+
+.bannerSwiper .content p {
+    @apply text-blue-3;
+}
+
+.bannerSwiper .swiper-pagination-bullet {
+    @apply md:w-5 md:h-5 w-3.5 h-3.5 mx-9 md:bg-white bg-blue-1 rounded-full;
+}
+
+
+/* meet doctors section start  */
+.meet-doctors, .treatment {
+    @apply bg-[url('../assets/images/bg3.png')] bg-cover bg-center py-18 md:py-18 lg:py-25;
+}
+
+.meet-doctors .container-fluid {
+    @apply px-0 md:px-0 lg:px-55px;
+}
+
+.meet-doctors .card {
+    @apply flex flex-col h-full;
+}
+
+.doctorsSwiper .swiper-wrapper {
+    @apply items-stretch;
+}
+
+.doctorsSwiper .swiper-slide {
+    @apply h-auto flex;
+}
+
+.doctorsSwiper .swiper-slide .card {
+    @apply flex flex-col h-full;
+}
+
+.meet-doctors .card-body {
+    @apply flex flex-col flex-1 bg-blue-5/40 px-7 pt-13 pb-10 text-center border border-white/0 -mt-5 group-hover:bg-blue-5 group-hover:border-white transition duration-300 ease-linear;
+}
+
+.meet-doctors .card-img {
+    @apply w-full overflow-hidden px-10 z-2;
+}
+
+.meet-doctors .card-img img {
+    @apply w-full object-cover mx-auto aspect-square z-2 shadow-2;
+}
+
+.meet-doctors .btn {
+    @apply mt-auto;
+}
+
+.doctorsSwiper .swiper-button-prev svg,
+.doctorsSwiper .swiper-button-next svg {
+    @apply hidden;
+}
+
+.doctorsSwiper .swiper-button-prev,
+.doctorsSwiper .swiper-button-next {
+    @apply w-16 h-16 flex items-center justify-center;
+}
+.audience-overlay p {
+    @apply text-white;
+}
+
+
+/* audience card */
+.audience-section .container-fluid {
+    @apply px-0 md:px-0 lg:px-55px;
+}
+
+.audience-card {
+    @apply relative overflow-hidden hover:shadow-1 transition-transform duration-500 ease-out;
+}
+
+.audience-card:hover {
+    transform: scale(1.05);
+}
+
+.audience-img img {
+    @apply w-full h-full object-cover lg:aspect-[3/3.4] grayscale;
+}
+.swiper-slide-active .audience-img img {
+    @apply min-h-620px transition-all duration-500 ease-out;
+}
+
+.audience-overlay {
+    @apply absolute inset-0 bg-blue-1/80 text-white flex flex-col justify-center px-8 lg:px-10 pb-10 opacity-0 translate-y-6 transition-all duration-500 ease-out;
+}
+
+.audience-card:hover .audience-overlay {
+    @apply opacity-100 translate-y-0;
+}
+
+.audience-overlay h3 {
+    @apply font-heading lg:text-2 text-4 lg:mb-4 mb-2.5;
+}
+
+.audience-overlay p {
+    @apply text-6 leading-relaxed mb-6;
+}
+
+.audience-overlay .divider {
+    @apply w-full h-0.25 bg-white mb-2.5;
+}
+
+.audience-card .image-badge {
+    @apply hidden lg:block absolute top-10 left-0 px-10 py-2.5 w-full font-heading text-white text-3 bg-gradient-to-r from-blue-1 to-transparent shadow-1 group-hover:hidden;
+}
+.audience-overlay p {
+    @apply text-white;
+}
+
+.anyAgeSwiper .swiper-button-next svg,
+.anyAgeSwiper .swiper-button-prev svg {
+    @apply hidden;
+}
+
+/* testimonials section start */
+.testimonials::before {
+    content: '';
+    @apply absolute inset-0
+           bg-[url('../assets/images/bg1.png')]
+           bg-cover bg-center
+           grayscale
+           opacity-30
+           z-0;
+}
+.testimonials .divider {
+    @apply w-full;
+}
+
+.reviewSwiper .review-box {
+    @apply relative z-10 bg-white/80 p-6 lg:p-10 shadow-1 text-center;
+}
+
+.reviewSwiper .review-box p{
+    @apply lg:text-xl text-blue-1 italic mb-5;
+}
+
+.reviewSwiper .review-box span {
+    @apply text-5 leading-7 text-blue-2 font-bold;
+}
+
+.reviewSwiper {
+      width: 100%;
+      height: 100%;
+    }
+  
+.reviewSwiper .swiper-pagination-bullet {
+    @apply md:w-5 md:h-5 w-3.5 h-3.5 mx-2! bg-blue-1 rounded-full;
+}
+.treatmentSwiper .swiper-button-next svg,
+.treatmentSwiper .swiper-button-prev svg {
+    @apply hidden;
+}
+
+
+/* result section start */
+.result .heading p {
+    @apply max-w-[1110px];
+}
+.result #prevnextSlider {
+  @apply relative flex
+         w-[clamp(20rem,75vw,750px)]
+         max-h-[95vh]
+         aspect-4/2;
+}
+
+/* image wrappers */
+.result .img-wrapper {
+  @apply absolute inset-0 overflow-hidden;
+}
+
+.result .img-wrapper:nth-child(2) {
+  clip-path: inset(0px 0px 0px 50%);
+}
+
+/* images */
+.result .img-wrapper img {
+  @apply w-full h-full object-cover grayscale;
+}
+
+/* WebKit thumb */
+.result input::-webkit-slider-thumb {
+  @apply opacity-0;
+}
+
+.result input::-moz-range-thumb {
+  @apply opacity-0;
+}
+
+/* active state */
+.result input:active::-webkit-slider-thumb {
+  @apply cursor-grabbing;
+}
+
+.result input:active::-moz-range-thumb {
+  @apply cursor-grabbing;
+}
+
+.result .before-img::before {
+    content: '';
+    @apply absolute inset-0
+           bg-black/20
+           z-1;
+}
+.result .image-badge {
+    @apply hidden lg:block absolute bottom-10 left-0 px-10  py-2.5 w-full font-heading text-white text-3 leading-6 bg-gradient-to-r from-blue-1 to-transparent shadow-1 group-hover:hidden;
+}
+
+
+/* location section start */
+.location .divider {
+  @apply w-full h-0.25 bg-white mt-2.5 ;
+}
+
+.location {
+    /* add linear gradient */
+    @apply bg-gradient-to-b from-[#C9C9C9] to-[#C9C9C9]/0;
+}
+.location .box .icon {
+    @apply w-5 h-5 min-w-5 object-contain;
+}
+
+.cta {
+    @apply w-full p-16 bg-[url('../assets/images/bg2.png')] bg-cover bg-center relative overflow-hidden;
+}
+
